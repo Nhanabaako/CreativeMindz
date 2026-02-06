@@ -64,13 +64,13 @@ export default function Contact() {
           <div className="info-card">
             <FaPhone className="info-icon"/>
             <h3>Phone</h3>
-            <p>+233 XX XXX XXXX</p>
+            <p>+27 781275164</p>
           </div>
 
           <div className="info-card">
             <FaMapMarkerAlt className="info-icon"/>
             <h3>Location</h3>
-            <p>Accra, Ghana</p>
+            <p>South Africa </p>
           </div>
 
           {/* SOCIAL */}

@@ -39,7 +39,7 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          <h1>About CreativeMindz Streamline</h1>
+          <h1>About CreativeMindz</h1>
           <p>Your ultimate streaming destination</p>
         </motion.div>
       </section>

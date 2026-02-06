@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="footer-section">
           <h2 className="footer-logo">CreativeMindz</h2>
           <p>
-            CreativeMindz Streamline is your ultimate destination for movies,
+            CreativeMindz is your ultimate destination for movies shooting,
             series, and premium entertainment anytime, anywhere.
           </p>
 
@@ -79,8 +79,8 @@ export default function Footer() {
           <h3>Contact</h3>
 
           <p><FaEnvelope /> support@creativemindz.com</p>
-          <p><FaPhone /> +233 XX XXX XXXX</p>
-          <p><FaMapMarkerAlt /> Accra, Ghana</p>
+          <p><FaPhone /> +27 781275164</p>
+          <p><FaMapMarkerAlt /> South Africa</p>
 
           {/* NEWSLETTER */}
           <form onSubmit={handleSubscribe} className="newsletter">
@@ -102,7 +102,7 @@ export default function Footer() {
       {/* BOTTOM */}
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} CreativeMindz Streamline. All rights reserved.
+          © {new Date().getFullYear()} CreativeMindz Production. All rights reserved.
         </p>
       </div>
 

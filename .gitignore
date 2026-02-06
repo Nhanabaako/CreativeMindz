@@ -1,5 +1,22 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Security
+.env
+.env.local
 
+# Production builds
+/build
+/dist
+
+# Media (Keep the repo light!)
+*.mp4
+*.mov
+*.avi
+*.zip
+*.rar
+
+# System files
+.DS_Store
+Thumbs.db
 # dependencies
 /node_modules
 /.pnp
