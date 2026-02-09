@@ -48,8 +48,8 @@ export default function Footer() {
   }}
 />
           <p>
-            CreativeMindz is your ultimate destination for movies shooting,
-            series, and premium entertainment anytime, anywhere.
+            CreativeMindz is your ultimate destination for movies,
+            series, and coporate events anytime, anywhere.
           </p>
 
           <div className="footer-socials">
@@ -76,11 +76,13 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Categories</h3>
           <ul>
-            <li>Action Movies</li>
+            <li>Movies</li>
             <li>Drama Series</li>
+            <li>Sports</li>
             <li>Comedy Shows</li>
             <li>Documentaries</li>
             <li>Trending Content</li>
+            <li>Talk Shows</li>
           </ul>
         </div>
 
@@ -88,7 +90,7 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Contact</h3>
 
-          <p><FaEnvelope /> support@creativemindz.com</p>
+          {/* <p><FaEnvelope /> support@creativemindz.com</p> */}
           <p><FaPhone /> +27 781275164</p>
           <p><FaMapMarkerAlt /> South Africa</p>
 
