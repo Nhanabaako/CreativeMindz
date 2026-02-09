@@ -16,47 +16,47 @@ const navigate = useNavigate();
 
     {
       id: 1,
-      title: "John Wick 4",
-      category: "Action",
-      image: "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-      trailer: "https://www.youtube.com/embed/qEVUtrk8_B4"
+      title: "I Love My Wife",
+      category: "Romance",
+      image: "../img/Movies/love-my-wife.jpeg",
+      trailer: ""
     },
 
     {
       id: 2,
-      title: "Interstellar",
-      category: "Sci-Fi",
-      image: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      title: " Loud Cry",
+      category: "Romance",
+      image: "../img/Movies/loudcry.jpeg",
       trailer: "https://www.youtube.com/embed/zSWdZVtXT7E"
     },
 
     {
       id: 3,
-      title: "The Batman",
-      category: "Action",
-      image: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+      title: "Fufu & Paps",
+      category: "Comedy",
+      image: "../img/Movies/fufu.jpeg",
       trailer: "https://www.youtube.com/embed/mqqft2x_Aa4"
     },
 
     {
       id: 4,
-      title: "Joker",
-      category: "Drama",
-      image: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+      title: "Worldcup 2026",
+      category: "Sports",
+      image: "../img/Movies/sports.jpeg",
       trailer: "https://www.youtube.com/embed/zAGVQLHvwOY"
     },
 
-    {
-      id: 5,
-      title: "Avatar 2",
-      category: "Sci-Fi",
-      image: "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
-      trailer: "https://www.youtube.com/embed/d9MyW72ELq0"
-    }
+    // {
+    //   id: 5,
+    //   title: "Avatar 2",
+    //   category: "Sci-Fi",
+    //   image: "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+    //   trailer: "https://www.youtube.com/embed/d9MyW72ELq0"
+    // }
 
   ];
 
-  const categories = ["All", "Action", "Drama", "Sci-Fi"];
+  const categories = ["All", "Romance", "Sports", "Comedy"];
 
   const [activeCategory, setActiveCategory] = useState("All");
   const [search, setSearch] = useState("");
