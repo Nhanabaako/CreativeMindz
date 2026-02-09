@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Box from '@mui/material/Box';
 import "./Footer.css";
 import {
   FaFacebook,
@@ -36,7 +37,16 @@ export default function Footer() {
 
         {/* BRAND */}
         <div className="footer-section">
-          <h2 className="footer-logo">CreativeMindz</h2>
+          <Box component="img"
+  src="../img/C-logo.PNG"
+  alt="CreativeMindz-logo"
+  sx={{
+    height: { xs: 48, sm: 64, md: 120 },
+    cursor: 'pointer',
+    transition: 'transform 0.25s ease',
+    '&:hover': { transform: 'scale(1.05)' }
+  }}
+/>
           <p>
             CreativeMindz is your ultimate destination for movies shooting,
             series, and premium entertainment anytime, anywhere.

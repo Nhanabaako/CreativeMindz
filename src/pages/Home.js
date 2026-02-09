@@ -7,20 +7,20 @@ export default function Home() {
 
   const featured = [
     {
-      title: "The Dark Knight",
-      image: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+      title: "Fufu & Paps",
+      image: "../img/Movies/fufu.jpeg"
     },
     {
-      title: "Inception",
-      image: "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg"
+      title: "Loud Cry",
+      image: "../img/Movies/loudcry.jpeg"
     },
     {
-      title: "Interstellar",
-      image: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+      title: "I Love My Wife",
+      image: "../img/Movies/love-my-wife.jpeg"
     },
     {
-      title: "John Wick",
-      image: "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg"
+      title: "Worldcup 2026",
+      image: "../img/Movies/sports.jpeg"
     }
   ];
 

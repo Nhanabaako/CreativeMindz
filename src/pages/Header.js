@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Box from '@mui/material/Box';
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./style.css";
@@ -38,11 +39,22 @@ export default function Header() {
     >
       <div className="nav-container">
 
-        {/* Logo */}
+
+<Box component="img"
+  src="../img/C-logo.PNG"
+  alt="CreativeMindz-logo"
+  sx={{
+    height: { xs: 48, sm: 64, md: 80 },
+    cursor: 'pointer',
+    transition: 'transform 0.25s ease',
+    '&:hover': { transform: 'scale(2.05)' }
+  }}
+/>
+
+        {/* Logo
         <Link to="/" className="logo">
-          {/* <img src="../img/M.PNG" alt="logo" /> */}
-          <span>CreativeMindz</span>
-        </Link>
+          <img src="../img/C-logo.PNG" alt="logo" />
+        </Link> */}
 
         {/* Desktop menu */}
         <ul className="nav-links">

@@ -52,20 +52,8 @@ body {
 
 /* LOGO */
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
 
-.logo img {
-  width: 40px;
-}
 
 
 /* NAV LINKS */
