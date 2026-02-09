@@ -1,0 +1,272 @@
+/* ============================= */
+/* TALKSHOW HERO */
+/* ============================= */
+
+.talk-hero {
+  height: 85vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.talk-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.9) 20%,
+    rgba(0,0,0,0.6) 50%,
+    rgba(0,0,0,0.3) 100%
+  );
+}
+
+.talk-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  color: white;
+}
+
+.talk-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.talk-hero-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* HERO BADGE */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,0,0,0.15);
+  border: 1px solid rgba(255,0,0,0.4);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* HERO META */
+.hero-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.hero-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #ff1f2c;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 12px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* STATS SECTION */
+.talk-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px 6%;
+  background: #0c0c0c;
+}
+
+.stat-box {
+  text-align: center;
+  background: #141414;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.stat-box:hover {
+  background: #1c1c1c;
+  transform: translateY(-5px);
+}
+.stat-box h3 {
+  font-size: 1.8rem;
+  color: #e50914;
+}
+.stat-box p {
+  color: #aaa;
+}
+
+/* SEARCH & CATEGORIES */
+.modern-controls {
+  padding: 30px 6%;
+}
+.modern-search {
+  background: #141414;
+  border-radius: 50px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.modern-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+.modern-categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.modern-categories button {
+  background: #1a1a1a;
+  color: #ccc;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modern-categories button.active {
+  background: #e50914;
+  color: white;
+}
+.modern-categories button:hover {
+  background: #e50914;
+  color: white;
+}
+
+/* SECTION HEADER */
+.section-header {
+  padding: 0 6%;
+  margin-bottom: 20px;
+}
+.section-header h2 {
+  font-size: 1.8rem;
+  color: white;
+}
+.section-header span {
+  color: #aaa;
+}
+
+/* MODERN CARD */
+.modern-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.modern-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.modern-card:hover img {
+  transform: scale(1.1);
+}
+
+/* CARD OVERLAY */
+.modern-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.modern-card:hover .modern-overlay {
+  opacity: 1;
+}
+.category-tag {
+  font-size: 0.8rem;
+  color: #e50914;
+  margin-bottom: 6px;
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  background: #e50914;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+.play-btn:hover {
+  background: #ff1f2c;
+}
+
+/* CTA SECTION */
+.talk-cta {
+  padding: 80px 6%;
+  background: linear-gradient(to right, #0c0c0c, #1a1a1a);
+  text-align: center;
+}
+.cta-box h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+.cta-box p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .talk-hero-content h1 {
+    font-size: 2rem;
+  }
+  .talk-hero {
+    height: 70vh;
+  }
+}

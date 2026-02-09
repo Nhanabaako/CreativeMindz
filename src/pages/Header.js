@@ -24,8 +24,11 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Series", path: "/Series" },
+    // { name: "Drama Series", path: "/Series" },
     { name: "Movies", path: "/Movies" },
+    { name: "Sports", path: "/Sports" },
+    { name: "Talk Shows", path: "/Talkshow" },
+    { name: "Documentaries", path: "/Documentaries" },
     { name: "About", path: "/About" },
     { name: "Contact", path: "/Contacts" }
   ];
