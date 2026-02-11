@@ -143,15 +143,17 @@
 
 /* ================= VISION & MISSION ================= */
 .about-vision {
+  background: #000;
   color: #fff;
   padding: 80px 50px;
-  max-width: 1100px;
+ 
   margin: auto;
 }
 
 .vision-content h2,
 .vision-content h3 {
   color: #00bfff;
+  text-align: center;
   margin-top: 35px;
   margin-bottom: 15px;
 }
@@ -170,8 +172,9 @@
 }
 
 .vision-content blockquote {
+  text-align: center;
   font-style: italic;
-  border-left: 4px solid #00bfff;
+
   padding-left: 12px;
   color: #ccc;
 }
@@ -180,16 +183,17 @@
 .about-cta {
   background: #111;
   color: #fff;
-  padding: 80px 50px;
+  padding: 40px 30px;
   text-align: center;
 }
 
 .cta-btn {
-  background: #00bfff;
+  background: #061e27;
+  height: auto;
   border: none;
   padding: 15px 30px;
   margin-top: 15px;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   border-radius: 8px;
   font-size: 1.1rem;
@@ -197,7 +201,7 @@
 }
 
 .cta-btn:hover {
-  background: #00ffff;
+  background: #216969;
   transform: translateY(-3px);
 }
 

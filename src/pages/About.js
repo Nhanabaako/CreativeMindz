@@ -53,7 +53,17 @@ export default function About() {
         >
           <h2>Who We Are</h2>
           <p>
-            CreativeMindz is a modern streaming platform designed to bring unlimited entertainment to users worldwide. Our mission is to provide seamless, high-quality streaming experiences with the best movies and TV series.
+            Creative Mindz Productions was established in 2009 by Frank K. Hemans, a seasoned camera operator, editor, and scriptwriter with a deep-rooted passion for sports, storytelling, and African creative excellence. What began as a focused production outfit has grown into a respected media brand with a strong footprint across African and international sports and film platforms.
+
+Since its inception, Creative Mindz Productions has delivered and contributed to a wide range of high-profile audio-visual projects distributed across DStv, LFF UK, and broadcast networks in Ghana, Togo, Malawi, and South Africa. The company has built a reputation for producing compelling, market-ready content that bridges African stories with global audiences.
+
+Founder Frank K. Hemans was later appointed as a permanent media professional with Primeval Media at the Accra Sports Stadium Media Centre, where he worked closely with the Ghana National Football Team (Black Stars). During this period, his expertise in player profiling, promotion, and sports media exposure contributed significantly to the visibility of Ghanaian footballers, facilitating opportunities and professional contracts for players across Europe and South Africa.
+
+His impact within Ghana’s football media ecosystem led to his engagement by the Ghana Football Association (GFA), where he worked on Division One League coverage, recording and documenting premier matches nationwide. This experience further positioned Creative Mindz Productions at the center of grassroots and professional football storytelling.
+
+Beyond sports media production, Creative Mindz Productions has gained international recognition within the film industry. The company achieved a milestone by serving as a jury member of an international film festival in 2024, followed by an appointment as Head of Jury in 2025—a testament to its creative credibility, leadership, and storytelling standards on a global stage.
+
+At its core, Creative Mindz Productions combines creative strength, strategic vision, and media infrastructure development, with a long-term focus on rebuilding and scaling a modern African media hub that supports talent discovery, content monetization, and cross-border collaborations
           </p>
         </motion.div>
       </section>
@@ -80,19 +90,19 @@ export default function About() {
       <section className="about-stats">
         <div className="stats-grid">
           <div>
-            <h2>10K+</h2>
+            <h2>20+</h2>
             <p>Movies</p>
           </div>
           <div>
-            <h2>5K+</h2>
+            <h2>5</h2>
             <p>Series</p>
           </div>
           <div>
-            <h2>50K+</h2>
+            <h2>500</h2>
             <p>Users</p>
           </div>
           <div>
-            <h2>100+</h2>
+            <h2>2</h2>
             <p>Countries</p>
           </div>
         </div>
