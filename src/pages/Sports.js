@@ -12,6 +12,7 @@ import {
   FaTrophy,
   FaClock
 } from "react-icons/fa";
+import { Description } from "@mui/icons-material";
 
 
 export default function Sports() {
@@ -20,13 +21,12 @@ export default function Sports() {
 
   // Featured main banner
   const featured = {
-    title: "Worldcup 2026",
+    title: "360 Sports Updates",
     description:
-      "Watch exclusive Worldcup matches, highlights and behind-the-scenes moments.",
-    image: "../img/Movies/sports.jpeg",
-    trailer: "https://www.youtube.com/embed/zAGVQLHvwOY",
+      "Watch exclusive matches, highlights and behind-the-scenes moments.",
+    image: "../img/Sports/sports.jpeg",
+    trailer: "https://www.youtube.com/@creativemindztv4240",
     category: "Football",
-    year: "2026"
   };
 
 
@@ -35,32 +35,33 @@ export default function Sports() {
 
     {
       id: 1,
-      title: "Worldcup 2026",
-      category: "Football",
-      image: "../img/Movies/sports.jpeg",
-      trailer: "https://www.youtube.com/embed/zAGVQLHvwOY"
+      title: "MTN Swag Awards",
+      category: "Football Events",
+      image: "../img/Sports/MTN Awards.jpeg",
+      video: "https://www.youtube.com/watch?v=0sgVqO3bt5Q&t=174s"
     },
 
     {
       id: 2,
-      title: "Premier League Highlights",
-      category: "Football",
-      image: "../img/Sports/epl.jpeg",
-      trailer: "https://www.youtube.com/embed/7tH0iO8kzWk"
+      title: "Langabel THE cHIEF DRUMMER OF THE BLACKSTARS  caution Ghana premier league teams about Karela",
+      category: "Football Events",
+      image: "../img/Sports/Lan-warns.jpeg",
+      trailer: "https://www.youtube.com/watch?v=AhOkpWd4ZMQ&pp=0gcJCZQKAYcqIYzv"
+     
     },
 
-    {
-      id: 3,
-      title: "NBA Finals",
-      category: "Basketball",
-      image: "../img/Sports/nba.jpeg",
-      trailer: "https://www.youtube.com/embed/gTBs1rqLtSk"
-    }
+    // {
+    //   id: 3,
+    //   title: "NBA Finals",
+    //   category: "Basketball",
+    //   image: "../img/Sports/nba.jpeg",
+    //   trailer: "https://www.youtube.com/embed/gTBs1rqLtSk"
+    // }
 
   ];
 
 
-  const categories = ["All", "Football", "Basketball"];
+  const categories = ["All", "Football", "Sports Events"];
 
   const [activeCategory, setActiveCategory] = useState("All");
   const [search, setSearch] = useState("");

@@ -10,42 +10,69 @@ export default function VideoPlayer() {
 
   const movie = location.state?.movie;
 
-  // fallback if no data
   if (!movie) {
     return (
       <div className="player-error">
         <h2>No video selected</h2>
-        <button onClick={() => navigate("/Movies")}>
+        <button onClick={() => navigate(-1)}>
           Go Back
         </button>
       </div>
     );
   }
 
-  const recommended = [
+  // get video url from movie object
+  const videoUrl =
+    movie.video ||
+    movie.trailer ||
+    "";
 
-    {
-      title: "Interstellar",
-      image: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
-    },
+  // convert youtube watch link → embed link
+  const getYouTubeEmbed = (url) => {
 
-    {
-      title: "John Wick",
-      image: "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
-    },
+    if (!url) return "";
 
-    {
-      title: "Batman",
-      image: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+    if (url.includes("youtube.com/watch")) {
+      const videoId = url.split("v=")[1]?.split("&")[0];
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
     }
 
+    if (url.includes("youtu.be")) {
+      const videoId = url.split("youtu.be/")[1];
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+
+    return url;
+  };
+
+  const embedUrl = getYouTubeEmbed(videoUrl);
+
+  const isYouTube =
+    embedUrl.includes("youtube.com/embed");
+
+  const recommended = [
+    {
+      title: "Interstellar",
+      image:
+        "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+    },
+    {
+      title: "John Wick",
+      image:
+        "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
+    },
+    {
+      title: "Batman",
+      image:
+        "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+    }
   ];
 
   return (
+
     <div className="player-page">
 
       {/* TOP BAR */}
-
       <div className="player-top">
 
         <button
@@ -61,26 +88,42 @@ export default function VideoPlayer() {
 
 
       {/* MAIN CONTENT */}
-
       <div className="player-container">
 
         {/* VIDEO SECTION */}
-
         <div className="video-section">
 
-          <video
-            controls
-            autoPlay
-            className="video-player"
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-          />
+          {/* YOUTUBE PLAYER */}
+          {isYouTube ? (
+
+            <iframe
+              className="video-player"
+              src={embedUrl}
+              title={movie.title}
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
+
+          ) : (
+
+            /* MP4 PLAYER */
+            <video
+              controls
+              autoPlay
+              className="video-player"
+              src={embedUrl}
+            />
+
+          )}
 
           <div className="video-info">
 
             <h2>{movie.title}</h2>
 
             <p>
-              Watch {movie.title} in HD quality. Enjoy unlimited streaming on CreativeMindz Streamline.
+              Watch {movie.title} in HD quality.
+              Enjoy unlimited streaming on CreativeMindz Streamline.
             </p>
 
           </div>
@@ -89,7 +132,6 @@ export default function VideoPlayer() {
 
 
         {/* SIDEBAR */}
-
         <div className="sidebar">
 
           <h3>Recommended</h3>
@@ -122,5 +164,7 @@ export default function VideoPlayer() {
       </div>
 
     </div>
+
   );
+
 }

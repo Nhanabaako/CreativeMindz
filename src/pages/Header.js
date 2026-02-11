@@ -54,10 +54,6 @@ export default function Header() {
   }}
 />
 
-        {/* Logo
-        <Link to="/" className="logo">
-          <img src="../img/C-logo.PNG" alt="logo" />
-        </Link> */}
 
         {/* Desktop menu */}
         <ul className="nav-links">

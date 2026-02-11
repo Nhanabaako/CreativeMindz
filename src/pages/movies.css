@@ -9,6 +9,7 @@
   center/cover no-repeat;
 
   position: relative;
+  background-position-y: 50%;
 
   display: flex;
   justify-content: center;
