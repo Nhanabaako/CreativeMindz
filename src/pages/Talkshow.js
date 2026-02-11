@@ -15,7 +15,7 @@ export default function Talkshow() {
     title: "Evening Conversations",
     description:
       "Catch the most engaging interviews with celebrities, experts, and influencers from around the world.",
-    image: "../img/Talkshow/evening.jpeg",
+    image: "../../public/img/Labels/Lab3.jpeg",
     trailer: "https://www.youtube.com/embed/example",
     category: "Interviews",
     duration: "45m",

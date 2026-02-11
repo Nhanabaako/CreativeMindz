@@ -102,7 +102,12 @@ export default function Footer() {
                 <Box
                   component="img"
                   src="../img/C-logo.PNG"
-                  sx={{ height: 80 }}
+                    sx={{
+    height: { xs: '30px', md: '40px' }, // Responsive height
+    width: '20',                      // Maintain aspect ratio
+    display: 'block',
+    margin: { xs: '0 auto', md: '0' },  // Center on mobile, left align on desktop
+  }}
                 />
 
                 <Typography
